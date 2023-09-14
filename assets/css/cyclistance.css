@@ -1,0 +1,37 @@
+.navbar-brand {
+  color: #191a20;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  min-height: 80px;
+  font-family: Poppins;
+}
+
+.navbar {
+  background-color: #fff;
+  position: fixed!important;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  letter-spacing: 2px;
+}
+
+.navbar .navbar-nav li:hover a {
+  color: #fba70b!important;
+}
+
+.navbar .navbar-nav li a.active {
+  color: #fba70b!important;
+}
+
+.nav-item {
+  display: inline;
+  font-weight: 500;
+  color: #7a7a7a;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  gap: 20px;
+  padding-left: 30px;
+  
+}
