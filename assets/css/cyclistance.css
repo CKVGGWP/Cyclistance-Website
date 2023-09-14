@@ -1,4 +1,4 @@
-.navbar-brand {
+.logo {
   color: #191a20;
   font-size: 28px;
   font-weight: 700;
@@ -9,7 +9,7 @@
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: transparent;
   position: fixed!important;
   top: 0px;
   left: 0px;
@@ -35,3 +35,48 @@
   padding-left: 30px;
   
 }
+
+.welcome-area {
+  width: 100vw;
+  height: 100vh;
+  min-height: 793px;
+  background-image: url(../images/Mockup\ Header\ photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 40%;
+}
+
+.welcome-area .header-text .left-text {
+  position: relative;
+  align-self: center;
+  margin-top: 35%;
+  transform: perspective(1px) translateY(-30%) !important;
+}
+
+.welcome-area .header-text h1 {
+  letter-spacing: 1px;
+  width: 746px;
+  height: 197px;
+  flex-shrink: 0;
+  color: var(--black, #1E1E1E);
+  font-family: Poppins;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.welcome-area .header-text p {
+  font-size: 17px;
+  margin-top: 40px;
+  position: relative;
+  width: 746px;
+  height: 81px;
+  flex-shrink: 0;
+  color: var(--black, #1E1E1E);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+

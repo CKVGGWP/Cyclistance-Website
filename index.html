@@ -6,15 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"/>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="cyclistance.css"/>
+
+  <link rel="stylesheet" href="assets/css/cyclistance.css"/>
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
   <title>Cyclistance</title>
   <link rel="icon" href="assets/images/Navbar Logo.png" type="image/icon type">
 </head>
+
 <body class = "vh-100 overflow-hidden">
   <nav class="navbar navbar-expand-lg background-header">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand logo" href="#">
         <img src="assets/images/Navbar Logo.png" alt="Logo" width="80" height="80">
         Cyclistance
       </a>
@@ -29,21 +31,38 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link scroll-to-section" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link scroll-to-section" href="#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link scroll-to-section" href="#about">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link scroll-to-section" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
+
+  <div class="welcome-area" id="home">
+
+    <div class="header-text">
+      <div class="container">
+          <div class="row">
+              <div class="left-text col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                  data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                  <h1>GET ASSISTANCE WHILE CYCLING ON THE ROAD</h1>
+                  <p>Facing a flat tire, an accident, or just need some quick help while out cycling? Cyclistance is here to rescue! Our app connects you to nearby cyclists and emergency services, helps you track a lost or stolen bike, and even allows you to mark hazardous roads. </p> 
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+ 
 </body>
 </html>
