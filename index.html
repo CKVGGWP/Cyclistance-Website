@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"/>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+
+
 
   <link rel="stylesheet" href="assets/css/cyclistance.css"/>
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -13,23 +16,21 @@
   <link rel="icon" href="assets/images/Navbar Logo.png" type="image/icon type">
 </head>
 
-<body class = "vh-100 overflow-hidden">
-  <nav class="navbar navbar-expand-lg background-header">
-    <div class="container">
+
+<body class = "vh-100">
+  <header class="header">
+  <div class="container-fluid px-lg-5">
+  <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0" id = "navbar">
       <a class="navbar-brand logo" href="#">
-        <img src="assets/images/Navbar Logo.png" alt="Logo" width="80" height="80">
+        <img src="assets/images/Navbar Logo.png" alt="Logo" width="70" height="70">
         Cyclistance
       </a>
-      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header border-bottom">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cyclistance</h5>
-          <button type="button" class="btn-close float-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content flex-grow-1 pe-3">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto py-0">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link scroll-to-section" aria-current="page" href="#home">Home</a>
             </li>
@@ -45,24 +46,72 @@
           </ul>
         </div>
       </div>
-    </div>
   </nav>
+</div>
+</header>
 
-  <div class="welcome-area" id="home">
+  <section class="home" id="home">
 
-    <div class="header-text">
+    <div class="home-text">
       <div class="container">
           <div class="row">
-              <div class="left-text col-lg-12 col-md-12 col-sm-12 col-xs-12"
-                  data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                  <h1>GET ASSISTANCE WHILE CYCLING ON THE ROAD</h1>
-                  <p>Facing a flat tire, an accident, or just need some quick help while out cycling? Cyclistance is here to rescue! Our app connects you to nearby cyclists and emergency services, helps you track a lost or stolen bike, and even allows you to mark hazardous roads. </p> 
+              <div class="left-text col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1>GET ASSISTANCE WHILE <br>CYCLING ON THE ROAD</h1>
+                  <p>Facing a flat tire, an accident, or just need some quick help while out cycling? Cyclistance is here to rescue! Our app connects you to nearby cyclists and emergency services, helps you track a lost or stolen bike, and even allows you to mark hazardous roads. </p>
+                  <a href="https://play.google.com/store/apps/details?id=your_app_package_name" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/Google Play.png" alt="Download on Google Play">
+                  </a> 
               </div>
           </div>
       </div>
     </div>
-  </div>
 
- 
+  </section>
+   
+  <section class = "features" id = "features">
+    <div class = "heading">
+      <h1>APP FEATURES</h1>
+
+      <div class="container-xxl py-5" >
+        <div class="container py-5 px-lg-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">About App</h5>
+                    <h1 class="mb-4">#1 App For Your Fitness</h1>
+                    <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="d-flex">
+                                <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                <div class="ms-3">
+                                    <h2 class="mb-0" data-toggle="counter-up">1234</h2>
+                                    <p class="text-primary-gradient mb-0">Active Install</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                            <div class="d-flex">
+                                <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                <div class="ms-3">
+                                    <h2 class="mb-0" data-toggle="counter-up">1234</h2>
+                                    <p class="text-secondary-gradient mb-0">Clients Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Read More</a>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/about.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+  </section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
