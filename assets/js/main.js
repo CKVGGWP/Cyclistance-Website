@@ -1,3 +1,8 @@
+(function ($) {
+  "use strict";   
+  
+  new WOW().init();
+    
     // Sticky Navbar
     $(function () {
         var navbar = $('.navbar');
@@ -46,4 +51,14 @@
           }
         });
       });
-      
+
+      // Screenshot carousel
+      $(".screenshot-carousel").owlCarousel({
+        autoplay: false,
+        smartSpeed: 1000,
+        loop: true,
+        dots: true,
+        items: 1
+    });
+    
+  })(jQuery);
