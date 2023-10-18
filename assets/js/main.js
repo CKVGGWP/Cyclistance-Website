@@ -54,11 +54,12 @@
 
       // Screenshot carousel
       $(".screenshot-carousel").owlCarousel({
-        autoplay: false,
+        autoplay: true,
         smartSpeed: 1000,
         loop: true,
         dots: true,
-        items: 1
+        items: 1,
+        margin: 10,
     });
     
   })(jQuery);
