@@ -1,5 +1,16 @@
 (function ($) {
-  "use strict";   
+  "use strict";
+
+  // Initialize the image, text, and subtitle arrays
+  let imgArr = ['assets/images/Google Play.png', 'assets/images/Google Play.png'];
+  let titleArr = ['Text 1', 'Text 2', 'Text 3', 'Text 4', 'Text 5', 'Text 6', 'Text 7', 'Text 8', 'Text 9', 'Text 10'];
+  let subtitleArr = ['SubText 1', 'SubText 2', 'SubText 3', 'SubText 4', 'SubText 5', 'SubText 6', 'SubText 7', 'SubText 8',
+  'SubText 9', 'SubText 10'];
+
+  // Initialize the image, text, and subtitle elements
+  let changeImage = $("#changeImage");
+  let changeTitle = $("#changeTitle");
+  let changeSubtitle = $("#changeSubtitle");
   
   new WOW().init();
     
@@ -13,7 +24,7 @@
             navbar.addClass('navbar-scroll');
         }
     });
-    });
+  });
 
     $(document).ready(function () {
         // Select the navbar element
@@ -60,6 +71,17 @@
         dots: true,
         items: 1,
         margin: 10,
+    });
+
+    // Title, Subtitle, and Image change
+    $(".screenshot-carousel").on('changed.owl.carousel', function (event) {
+        let currentImageAlt = $(".owl-item.active img").attr('alt');
+        console.log(currentImageAlt);
+        let indexAlt = currentImageAlt.split(" ")[1];
+        
+        changeImage.attr('src', imgArr[indexAlt]);
+        changeTitle.text(titleArr[indexAlt]);
+        changeSubtitle.text(subtitleArr[indexAlt]);
     });
 
   document.getElementById('form').addEventListener('submit', function (event) {

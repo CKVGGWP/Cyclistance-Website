@@ -227,6 +227,7 @@ header
   right: 0px;
   letter-spacing: 2px;
   transform: .5s;
+  z-index: 9999999999;
 }
 
 .navbar-light .navbar-nav .nav-link::before {
@@ -497,6 +498,20 @@ header
   width: 15px;
   height: 25px;
   border-radius: 28px;
+}
+
+.textMargin {
+  margin-top: 0;
+}
+
+@media (max-width: 830px){
+  .textMargin {
+    margin-top: 3rem;
+  }
+
+  .navbar {
+    background-color: #FFFFFF!important;
+  }
 }
 
 /* .feature-item .caption {
