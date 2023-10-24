@@ -331,6 +331,28 @@ header
   margin-top: 30px;
 }
 
+.textFit {
+  font-size: 4vw!important;
+}
+
+@media (max-width: 1080px) {
+  .textFit {
+    font-size: 5.7vw!important;
+  }
+
+  .pFit {
+    width: auto!important;
+    height: auto!important;
+  }
+}
+
+@media (max-width: 520px) {
+  .textFit {
+    font-size: 7.7vw!important;
+    height: 127px!important;
+  }
+}
+
 @media (max-width: 1420px) {
   .home .home-text {
     width: 70%;
@@ -504,7 +526,7 @@ header
   margin-top: 0;
 }
 
-@media (max-width: 830px){
+@media (max-width: 1000px){
   .textMargin {
     margin-top: 3rem;
   }
