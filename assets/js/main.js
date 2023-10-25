@@ -82,17 +82,39 @@
       margin: 10,
     });
 
+    // Initialize the image, text, and subtitle elements
     changeImage.attr('src', designArr[0]['Feature 1'][0]);
     changeTitle.text(designArr[0]['Feature 1'][1]);
     changeSubtitle.text(designArr[0]['Feature 1'][2]);
 
-    // Title, Subtitle, and Image change
-    $(".screenshot-carousel").on('changed.owl.carousel initialized.owl.carousel refreshed.owl.carousel', function (event) {
-      let currentImageAlt = $(".owl-item.active img").attr('alt');
+    // Add class to each dot
+    let dot = $('.owl-dot');
 
-      changeImage.attr('src', designArr[0][currentImageAlt][0]);
-      changeTitle.text(designArr[0][currentImageAlt][1]);
-      changeSubtitle.text(designArr[0][currentImageAlt][2]);
+    dot.each(function () {
+      let index = $(this).index() + 1;
+      $(this).addClass('Feature ' + index);
+    });
+
+    // Change image, title, and subtitle when dot is clicked
+    dot.on('click', function () {
+      let index = $(this).index() + 1;
+      $(".screenshot-carousel").trigger('to.owl.carousel', [index, 1000]);
+
+      changeImageText(index);
+    });
+
+    // Change image, title, and subtitle when carousel is changed
+    function changeImageText(index) {
+      changeImage.attr('src', designArr[0]['Feature ' + index][0]);
+      changeTitle.text(designArr[0]['Feature ' + index][1]);
+      changeSubtitle.text(designArr[0]['Feature ' + index][2]);
+    }
+
+    let activeDot = $('.owl-dot.active');
+    $(".screenshot-carousel").on('changed.owl.carousel', function (event) {
+      activeDot = $('.owl-dot.active');
+      let index = activeDot.index() + 1;
+      changeImageText(index);
     });
   });
 
