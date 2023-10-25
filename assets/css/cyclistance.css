@@ -346,6 +346,12 @@ header
   }
 }
 
+@media (max-width: 800px) {
+  .aboutImg {
+    width: 20rem!important;
+  }
+}
+
 @media (max-width: 520px) {
   .textFit {
     font-size: 7.7vw!important;
@@ -437,6 +443,17 @@ header
       border: 5px solid;
       border-color: #fff transparent transparent transparent;
     }
+}
+
+@media (max-width: 660px){
+  .left-text{
+    position: relative;
+    bottom: 13rem;
+  }
+
+  .textFit {
+    height: auto!important;
+  }
 }
 
 .features-content {
